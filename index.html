@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Footer</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h1 class="footer__logo">
+                    <img src="imges/case-logo.png" alt="Logo">
+                </h1>
+                            <p class="info">
+                We work with a passion of taking challenges and creating new ones in the advertising
+                sector.
+            </p>
+
+            <a class="footer__btn" href="#">About us</a>
+        </div>
+
+        <div class="column links">
+            <h3>Newsletter</h3>
+            <ul>
+                <li>
+                    <p class="info">
+                        Subscribe to our newsletter to get our latest updates and news.
+                    </p>
+                </li>
+                <li>
+                    <label>
+                        <input type="text" placeholder="Your email address" />
+                        <button class="btn"><i class="far fa-paper-plane"></i></button>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="column links">
+            <h3>Official info:</h3>
+            <ul>
+                <li>
+                    <p class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        30 Commercial Road Fratton, Australia
+                    </p>
+                    <p class="info">
+                        <i class="fas fa-phone"></i>
+                        1-888-452-1505
+                    </p>
+                </li>
+                <li>
+                    <h4>Open Hours:</h4>
+                    <ul>
+                        <li>
+                            <p class="info">Mon – Sat: 8 am – 5 pm</p>
+                            <p class="info">Sunday: CLOSED</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="column links">
+            <h3>Gallery</h3>
+        </div>
+        <button id="scroll-to-top-btn"><i class="fa-sharp fa-solid fa-arrow-up"></i></button>
+    </div>
+</footer>
+</body>
+
+<script type="text/javascript">
+    const scrollToTopButton = document.getElementById('scroll-to-top-btn');
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopButton.style.display = 'block';
+  } else {
+    scrollToTopButton.style.display = 'none';
+  }
+};
+
+scrollToTopButton.addEventListener('click', function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+</script>
+
+</html>
